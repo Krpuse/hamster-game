@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#100f2e"><title>هامستر داش | مغامرة المجرة</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar"><div class="brand"><span class="logo">🐹</span><div><h1>هامستر داش</h1><small>مغامرة المجرة</small></div></div><div class="actions"><button id="soundBtn" class="icon-btn" aria-label="الصوت">🔊</button><a class="download" href="https://github.com/Krpuse/hamster-game/archive/refs/heads/main.zip">⬇ تحميل اللعبة</a></div></header>
+    <section class="hud"><div><span>النقاط</span><b id="score">0</b></div><div><span>العملات</span><b id="coins">0</b></div><div><span>المستوى</span><b id="level">1</b></div><div class="energy"><span>طاقة السرعة</span><i><em id="energyBar"></em></i></div></section>
+    <section class="game-card"><canvas id="game" aria-label="ساحة اللعب"></canvas><div id="startScreen" class="overlay"><div class="hero">🐹</div><h2>انطلق يا بطل!</h2><p>اقفز فوق النيازك، اجمع الجبن، وحطم أرقامك القياسية.</p><button id="startBtn" class="primary">ابدأ المغامرة <span>←</span></button><p class="keys">التحكم: <kbd>Space</kbd> أو النقر للقفز • اضغط مرتين للقفزة المزدوجة</p></div><div id="gameOver" class="overlay hidden"><div class="hero">🏆</div><h2>رحلة رائعة!</h2><p>نتيجتك النهائية: <strong id="finalScore">0</strong></p><button id="retryBtn" class="primary">جولة جديدة <span>↻</span></button></div></section>
+    <section class="tips"><article><span>⚡</span><div><b>اجمع الطاقة</b><small>فعّل السرعة الخارقة عند امتلاء الشريط</small></div></article><article><span>🧀</span><div><b>الجبن = نقاط</b><small>كل قطعة جبن تمنحك 10 نقاط</small></div></article><article><span>🌟</span><div><b>سجلّك الأفضل</b><small><strong id="best">0</strong> نقطة — تحدَّ نفسك!</small></div></article></section>
+  </main><script src="game.js"></script>
+</body></html>
